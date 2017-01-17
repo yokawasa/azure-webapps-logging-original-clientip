@@ -87,7 +87,7 @@ HEADER=Custom-Header-Name
 
 At last, test the configuration by sending sample HTTP requests with X-Forwarded-For header or your custom header. Here is a sample script that send dummy HTTP request with your customer header using curl. Hope it would help for your test.
 
-```
+```shell
 HEADER_NAME="X-Forwarded-For"
 #HEADER_NAME="Custom-Header-Name"
 CLIENT_IP='192.168.0.1'
