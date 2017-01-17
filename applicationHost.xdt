@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+<configSections>
+    <sectionGroup name="system.webServer">
+      <section name="isapiFilters" xdt:Transform="SetAttributes(overrideModeDefault)" overrideModeDefault="Allow" />
+    </sectionGroup>
+  </configSections>
+</configuration>
