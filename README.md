@@ -1,6 +1,6 @@
 # ISAPI filters solution for logging the original Client IP in Azure Web Apps (IIS).
 
-[X-Forwarded-For](https://en.wikipedia.org/wiki/X-Forwarded-For) header logging is supported in Apache (with mod_proxy) but Microsoft IIS does not have a direct way to support the translation of the X-Forwarded-For value into the client ip (c-ip) header value used in its webserver logging. This is true for Azure web apps web server logging as web apps' webserver is IIS-based, hense I'd like to introduce how to log the original client ip using [f5-xforwarded-for](https://devcentral.f5.com/articles/x-forwarded-for-log-filter-for-windows-servers), an ISAPI Filter and HTTP Module for IIS originated by F5. The f5-xforwarded-for replaces ISAPI c-ip value with X-Forwarding-For HTTP header.
+[X-Forwarded-For](https://en.wikipedia.org/wiki/X-Forwarded-For) header logging is supported in Apache (with mod_proxy) but Microsoft IIS does not have a direct way to support the translation of the X-Forwarded-For value into the client ip (c-ip) header value that is used in its webserver logging as client IP address. This is true for Azure web apps' web server logging as it is IIS-based, hense I'd like to introduce how to log the original client ip using [f5-xforwarded-for](https://devcentral.f5.com/articles/x-forwarded-for-log-filter-for-windows-servers), an ISAPI Filter for IIS originated by F5. It can replace ISAPI c-ip value with X-Forwarding-For HTTP header.
 
 ##  Logging Client ip from the translation of X-Forwarded-For value
 
