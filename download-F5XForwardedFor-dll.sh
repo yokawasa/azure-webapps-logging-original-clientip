@@ -14,7 +14,7 @@ fi
 
 echo "Getting copy of F5XForwardedFor.zip from F5 download center...."
 ZIPFILE="F5XForwardedFor.zip"
-F5URL="http://devcentral.f5.com/downloads/codeshare/F5XForwardedFor.zip"
+F5URL="https://cdn.f5.com/websites/devcentral.f5.com/downloads/F5XForwardedFor.zip"
 wget -O ${ZIPFILE} ${F5URL}
 
 if [ ! -f ${ZIPFILE} ]

@@ -29,7 +29,7 @@ Once all files are deployed, restart the app and see if the original client IP i
 
 ### 1. Deploy the DLL with your web app
 
-First, download the F5XForwardedFor.dll (you need 32 bit version ) from [F5 site](http://devcentral.f5.com/downloads/codeshare/F5XForwardedFor.zip) on your local directory. You can run download-F5XForwardedFor-dll.sh script that helps you to get copy of F5XForwardedFor.zip from F5 site and extract a 32 bit DLL onto ISAPIFilters directory from the package.
+First, download the F5XForwardedFor.dll (you need 32 bit version ) from [F5 site](https://cdn.f5.com/websites/devcentral.f5.com/downloads/F5XForwardedFor.zip) on your local directory. You can run download-F5XForwardedFor-dll.sh script that helps you to get copy of F5XForwardedFor.zip from F5 site and extract a 32 bit DLL onto ISAPIFilters directory from the package.
 
 ```
 $ download-F5XForwardedFor-dll.sh
